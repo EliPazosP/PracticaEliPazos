@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario 2</title>
+    <link rel="stylesheet" type="text/css" href="./css/styles.css">
+    <link rel="stylesheet" 
+          href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" 
+          integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" 
+          crossorigin="anonymous">
+</head>
+<body>
+    <h1> 
+        Agregar tu lista de Pedidos 
+    </h1>
+    <hr>
+    <div class="frameOne">
+        <div class="row">
+            <div class="col-5">     
+                <p>Pedido:</p> 
+                <input type="text" class="form-control" name="order" id="order" placeholder="Escribe el número de Pedido">
+            </div>
+
+            <div class="col-5"> 
+                <p>Cantidad:</p> 
+                <input type="text" class="form-control" name="amount" id="amount" placeholder="Escribe la Cantidad">
+            </div>
+
+            <div class="col-5"> 
+                <p>Producto:</p> 
+                <input type="text" class="form-control" name="product" id="product" placeholder="Escribe el Producto">
+            </div>
+
+            <div class="col-5"> 
+                <p>Valor:</p> 
+                <input type="text" class="form-control" name="value" id="value" placeholder="Escribe el valor">
+            </div>
+
+            <div id="butoon">
+                <button type="button" class="btn btn-success" onclick="addRecord()"> Agregar </button>
+            </div>
+        </div>
+
+        <div>
+            <hr>
+            <h2>Lista de Pedidos</h2>
+            <hr>
+            <div class="row" id="records"> 
+                No hay elementos 
+            </div>
+        </div>
+    </div>
+
+    <script src="./js/object.js"></script>
+    <footer>
+        <hr>
+        <p> Creado por Elizabeth Pazos Pazos</p>
+    </footer>
+</body>
+</html>

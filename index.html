@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario 1</title>
+    <link rel="stylesheet" type="text/css" href="./css/styles.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous"> <!-- Estilos -->
+</head>
+<body>
+    
+    <h1>Agrega tu lista de Lugares</h1>
+        <div class="frameOne">
+            <center><img src="./img/lugar.png"></center>
+            <div class="category" id="category">
+                <b>Categoría</b>
+                <input type="text" class="form-control" id="place" name="place" placeholder="Escriba el nombre del lugar">
+            </div>
+            <div id="butoon">
+                <button type="button" class="btn btn-success" onclick="addCategory()">Agregar</button>
+            </div>
+            <div class="listArt" id="listArte">
+                <hr>
+                <h3 class="text-center">Lista de Lugares</h3>
+                <hr>
+                <div class="row" id="places">No hay elementos</div>
+            </div>
+        </div>
+    <footer>
+        <hr>
+        <p> Creado por Elizabeth Pazos Pazos</p>
+    </footer>
+    <script src="./js/array.js"></script>
+</body>
+</html>
+
